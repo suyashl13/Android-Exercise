@@ -27,14 +27,13 @@ public class MainActivity extends AppCompatActivity {
 
     void showCustomToast(String msg) {
         LayoutInflater inflater = getLayoutInflater();
-        View layout = inflater.inflate(R.layout.toast_layout, findViewById(R.id.toast_root));
-
-        TextView toastText = layout.findViewById(R.id.toast_text);
-        toastText.setText(msg);
+        View tost_layout = inflater.inflate(R.layout.another_toast, findViewById(R.id.another_toast_root));
+        TextView anothertext = tost_layout.findViewById(R.id.another_toast_text);
+        anothertext.setText(msg);
 
         Toast toast = new Toast(getApplicationContext());
         toast.setDuration(Toast.LENGTH_SHORT);
-        toast.setView(layout);
+        toast.setView(tost_layout);
         toast.show();
     }
 }
