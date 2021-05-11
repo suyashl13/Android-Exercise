@@ -1,0 +1,2 @@
+rootProject.name = "Random Background Generator"
+include ':app'
