@@ -19,6 +19,5 @@ public class MainActivity extends AppCompatActivity {
         AutoCompleteTextView autoCompleteTextView = findViewById(R.id.autoComplete);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, countries);
         autoCompleteTextView.setAdapter(adapter);
-
     }
 }
