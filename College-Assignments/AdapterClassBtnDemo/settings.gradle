@@ -1,0 +1,2 @@
+rootProject.name = "Adapter Class Btn Demo"
+include ':app'
