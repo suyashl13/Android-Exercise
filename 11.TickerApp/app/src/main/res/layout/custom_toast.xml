@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/toast_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:background="@color/purple_500"
+    android:gravity="center"
+    android:padding="6dp"
+    android:layout_height="wrap_content"
+    tools:ignore="HardcodedText">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_timer_24"
+
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:padding="8sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Ticker Time Completed."/>
+
+</LinearLayout>
