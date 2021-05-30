@@ -1,0 +1,2 @@
+rootProject.name = "Grab Link"
+include ':app'

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="12sp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grab\nLink"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="@android:integer/config_longAnimTime"
+        tools:ignore="HardcodedText,UnusedAttribute" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginBottom="4sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingHorizontal="8sp"
+            android:paddingVertical="4sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/linkNameText"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_shape"
+                android:hint="Site Name"
+                android:paddingVertical="6dp"
+                android:textSize="16sp"
+                android:paddingHorizontal="10dp"
+                android:layout_marginVertical="5sp"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+            <EditText
+                android:id="@+id/linkURLText"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_shape"
+                android:hint="Link URL"
+                android:paddingVertical="6dp"
+                android:textSize="16sp"
+                android:paddingHorizontal="10dp"
+                android:layout_marginVertical="5sp"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+
+            <Button
+                android:id="@+id/addLinkBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Link"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/linkList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
