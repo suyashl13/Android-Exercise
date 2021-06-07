@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/list_item_tile"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="12sp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/randomUserProfile"
+        android:layout_width="88sp"
+        android:layout_height="88sp"
+        tools:srcCompat="@tools:sample/avatars"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginHorizontal="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <TextView
+            android:textColor="@color/black"
+            android:text="Username"
+            android:textSize="20sp"
+            android:id="@+id/randomUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/randomUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</LinearLayout>
